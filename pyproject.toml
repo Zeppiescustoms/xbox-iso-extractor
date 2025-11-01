@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "xbox-iso-extractor"
+version = "0.1.0"
+description = "Extract files from Xbox and Xbox 360 ISO images"
+readme = "README.md"
+requires-python = ">=3.11"
+
+[project.scripts]
+xboxiso = "xboxiso.cli:main"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+addopts = "-q"
